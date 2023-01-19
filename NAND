@@ -1,0 +1,11 @@
+module NAND(rsc1,rsc2,des)
+  input rsc1,rsc2;
+  output des;
+  reg des;
+  
+ always@(rsc1 or rsc2)
+ begin
+ des=~(rsc1 & src2);
+ end
+ 
+endmodule
